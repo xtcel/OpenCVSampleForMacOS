@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1831FF0124D1087F00E50E1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831FF0024D1087F00E50E1C /* AppDelegate.swift */; };
+		1831FF0324D1088400E50E1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1831FF0224D1088400E50E1C /* Assets.xcassets */; };
+		1831FF1224D1088500E50E1C /* OpenCVSampleForMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831FF1124D1088500E50E1C /* OpenCVSampleForMacOSTests.swift */; };
+		1831FF1D24D1088500E50E1C /* OpenCVSampleForMacOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831FF1C24D1088500E50E1C /* OpenCVSampleForMacOSUITests.swift */; };
+		1831FF2C24D1096900E50E1C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1831FF2B24D1096900E50E1C /* opencv2.framework */; };
+		1831FF3124D10A9200E50E1C /* CVCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1831FF3024D10A9200E50E1C /* CVCamera.mm */; };
+		1831FF3324D112EB00E50E1C /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1831FF3224D112EB00E50E1C /* OpenCL.framework */; };
+		1831FF3524D112F400E50E1C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1831FF3424D112F400E50E1C /* Accelerate.framework */; };
+		1831FF3724D1145200E50E1C /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831FF3624D1145200E50E1C /* ScanViewController.swift */; };
+		1831FF3924D12DB300E50E1C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1831FF3824D12DB300E50E1C /* MainMenu.xib */; };
+		18BD84DD24D1AE7D00A2E5D1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BD84DC24D1AE7D00A2E5D1 /* AVFoundation.framework */; };
+		18BD84DF24D1AE8400A2E5D1 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BD84DE24D1AE8400A2E5D1 /* AVKit.framework */; };
+		18BD84E124D1AEC900A2E5D1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BD84E024D1AEC900A2E5D1 /* CoreVideo.framework */; };
+		18BD84E424D1AF5300A2E5D1 /* CoreMediaIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BD84E224D1AF5300A2E5D1 /* CoreMediaIO.framework */; };
+		18BD84E524D1AF5300A2E5D1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BD84E324D1AF5300A2E5D1 /* CoreMedia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1831FF0E24D1088500E50E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1831FEF524D1087F00E50E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1831FEFC24D1087F00E50E1C;
+			remoteInfo = OpenCVSampleForMacOS;
+		};
+		1831FF1924D1088500E50E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1831FEF524D1087F00E50E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1831FEFC24D1087F00E50E1C;
+			remoteInfo = OpenCVSampleForMacOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1831FEFD24D1087F00E50E1C /* OpenCVSampleForMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVSampleForMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1831FF0024D1087F00E50E1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1831FF0224D1088400E50E1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1831FF0724D1088400E50E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1831FF0824D1088400E50E1C /* OpenCVSampleForMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenCVSampleForMacOS.entitlements; sourceTree = "<group>"; };
+		1831FF0D24D1088500E50E1C /* OpenCVSampleForMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVSampleForMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1831FF1124D1088500E50E1C /* OpenCVSampleForMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVSampleForMacOSTests.swift; sourceTree = "<group>"; };
+		1831FF1324D1088500E50E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1831FF1824D1088500E50E1C /* OpenCVSampleForMacOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVSampleForMacOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1831FF1C24D1088500E50E1C /* OpenCVSampleForMacOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVSampleForMacOSUITests.swift; sourceTree = "<group>"; };
+		1831FF1E24D1088500E50E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1831FF2B24D1096900E50E1C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		1831FF2E24D10A9100E50E1C /* OpenCVSampleForMacOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVSampleForMacOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		1831FF2F24D10A9200E50E1C /* CVCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVCamera.h; sourceTree = "<group>"; };
+		1831FF3024D10A9200E50E1C /* CVCamera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVCamera.mm; sourceTree = "<group>"; };
+		1831FF3224D112EB00E50E1C /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		1831FF3424D112F400E50E1C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		1831FF3624D1145200E50E1C /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		1831FF3824D12DB300E50E1C /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		18BD84DC24D1AE7D00A2E5D1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		18BD84DE24D1AE8400A2E5D1 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		18BD84E024D1AEC900A2E5D1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		18BD84E224D1AF5300A2E5D1 /* CoreMediaIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMediaIO.framework; path = System/Library/Frameworks/CoreMediaIO.framework; sourceTree = SDKROOT; };
+		18BD84E324D1AF5300A2E5D1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1831FEFA24D1087F00E50E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BD84E424D1AF5300A2E5D1 /* CoreMediaIO.framework in Frameworks */,
+				18BD84E524D1AF5300A2E5D1 /* CoreMedia.framework in Frameworks */,
+				18BD84E124D1AEC900A2E5D1 /* CoreVideo.framework in Frameworks */,
+				18BD84DF24D1AE8400A2E5D1 /* AVKit.framework in Frameworks */,
+				18BD84DD24D1AE7D00A2E5D1 /* AVFoundation.framework in Frameworks */,
+				1831FF3524D112F400E50E1C /* Accelerate.framework in Frameworks */,
+				1831FF3324D112EB00E50E1C /* OpenCL.framework in Frameworks */,
+				1831FF2C24D1096900E50E1C /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1831FF0A24D1088500E50E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1831FF1524D1088500E50E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1831FEF424D1087F00E50E1C = {
+			isa = PBXGroup;
+			children = (
+				1831FEFF24D1087F00E50E1C /* OpenCVSampleForMacOS */,
+				1831FF1024D1088500E50E1C /* OpenCVSampleForMacOSTests */,
+				1831FF1B24D1088500E50E1C /* OpenCVSampleForMacOSUITests */,
+				1831FF2A24D1093D00E50E1C /* Frameworks */,
+				1831FEFE24D1087F00E50E1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1831FEFE24D1087F00E50E1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1831FEFD24D1087F00E50E1C /* OpenCVSampleForMacOS.app */,
+				1831FF0D24D1088500E50E1C /* OpenCVSampleForMacOSTests.xctest */,
+				1831FF1824D1088500E50E1C /* OpenCVSampleForMacOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1831FEFF24D1087F00E50E1C /* OpenCVSampleForMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				1831FF0024D1087F00E50E1C /* AppDelegate.swift */,
+				1831FF0224D1088400E50E1C /* Assets.xcassets */,
+				1831FF0724D1088400E50E1C /* Info.plist */,
+				1831FF2F24D10A9200E50E1C /* CVCamera.h */,
+				1831FF3024D10A9200E50E1C /* CVCamera.mm */,
+				1831FF3824D12DB300E50E1C /* MainMenu.xib */,
+				1831FF0824D1088400E50E1C /* OpenCVSampleForMacOS.entitlements */,
+				1831FF2E24D10A9100E50E1C /* OpenCVSampleForMacOS-Bridging-Header.h */,
+				1831FF3624D1145200E50E1C /* ScanViewController.swift */,
+			);
+			path = OpenCVSampleForMacOS;
+			sourceTree = "<group>";
+		};
+		1831FF1024D1088500E50E1C /* OpenCVSampleForMacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				1831FF1124D1088500E50E1C /* OpenCVSampleForMacOSTests.swift */,
+				1831FF1324D1088500E50E1C /* Info.plist */,
+			);
+			path = OpenCVSampleForMacOSTests;
+			sourceTree = "<group>";
+		};
+		1831FF1B24D1088500E50E1C /* OpenCVSampleForMacOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1831FF1C24D1088500E50E1C /* OpenCVSampleForMacOSUITests.swift */,
+				1831FF1E24D1088500E50E1C /* Info.plist */,
+			);
+			path = OpenCVSampleForMacOSUITests;
+			sourceTree = "<group>";
+		};
+		1831FF2A24D1093D00E50E1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18BD84E324D1AF5300A2E5D1 /* CoreMedia.framework */,
+				18BD84E224D1AF5300A2E5D1 /* CoreMediaIO.framework */,
+				18BD84E024D1AEC900A2E5D1 /* CoreVideo.framework */,
+				18BD84DE24D1AE8400A2E5D1 /* AVKit.framework */,
+				18BD84DC24D1AE7D00A2E5D1 /* AVFoundation.framework */,
+				1831FF3424D112F400E50E1C /* Accelerate.framework */,
+				1831FF3224D112EB00E50E1C /* OpenCL.framework */,
+				1831FF2B24D1096900E50E1C /* opencv2.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1831FEFC24D1087F00E50E1C /* OpenCVSampleForMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1831FF2124D1088500E50E1C /* Build configuration list for PBXNativeTarget "OpenCVSampleForMacOS" */;
+			buildPhases = (
+				1831FEF924D1087F00E50E1C /* Sources */,
+				1831FEFA24D1087F00E50E1C /* Frameworks */,
+				1831FEFB24D1087F00E50E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCVSampleForMacOS;
+			productName = OpenCVSampleForMacOS;
+			productReference = 1831FEFD24D1087F00E50E1C /* OpenCVSampleForMacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1831FF0C24D1088500E50E1C /* OpenCVSampleForMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1831FF2424D1088500E50E1C /* Build configuration list for PBXNativeTarget "OpenCVSampleForMacOSTests" */;
+			buildPhases = (
+				1831FF0924D1088500E50E1C /* Sources */,
+				1831FF0A24D1088500E50E1C /* Frameworks */,
+				1831FF0B24D1088500E50E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1831FF0F24D1088500E50E1C /* PBXTargetDependency */,
+			);
+			name = OpenCVSampleForMacOSTests;
+			productName = OpenCVSampleForMacOSTests;
+			productReference = 1831FF0D24D1088500E50E1C /* OpenCVSampleForMacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1831FF1724D1088500E50E1C /* OpenCVSampleForMacOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1831FF2724D1088500E50E1C /* Build configuration list for PBXNativeTarget "OpenCVSampleForMacOSUITests" */;
+			buildPhases = (
+				1831FF1424D1088500E50E1C /* Sources */,
+				1831FF1524D1088500E50E1C /* Frameworks */,
+				1831FF1624D1088500E50E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1831FF1A24D1088500E50E1C /* PBXTargetDependency */,
+			);
+			name = OpenCVSampleForMacOSUITests;
+			productName = OpenCVSampleForMacOSUITests;
+			productReference = 1831FF1824D1088500E50E1C /* OpenCVSampleForMacOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1831FEF524D1087F00E50E1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = mapnext;
+				TargetAttributes = {
+					1831FEFC24D1087F00E50E1C = {
+						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
+					};
+					1831FF0C24D1088500E50E1C = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 1831FEFC24D1087F00E50E1C;
+					};
+					1831FF1724D1088500E50E1C = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 1831FEFC24D1087F00E50E1C;
+					};
+				};
+			};
+			buildConfigurationList = 1831FEF824D1087F00E50E1C /* Build configuration list for PBXProject "OpenCVSampleForMacOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1831FEF424D1087F00E50E1C;
+			productRefGroup = 1831FEFE24D1087F00E50E1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1831FEFC24D1087F00E50E1C /* OpenCVSampleForMacOS */,
+				1831FF0C24D1088500E50E1C /* OpenCVSampleForMacOSTests */,
+				1831FF1724D1088500E50E1C /* OpenCVSampleForMacOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1831FEFB24D1087F00E50E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1831FF0324D1088400E50E1C /* Assets.xcassets in Resources */,
+				1831FF3924D12DB300E50E1C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1831FF0B24D1088500E50E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1831FF1624D1088500E50E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1831FEF924D1087F00E50E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1831FF0124D1087F00E50E1C /* AppDelegate.swift in Sources */,
+				1831FF3124D10A9200E50E1C /* CVCamera.mm in Sources */,
+				1831FF3724D1145200E50E1C /* ScanViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1831FF0924D1088500E50E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1831FF1224D1088500E50E1C /* OpenCVSampleForMacOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1831FF1424D1088500E50E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1831FF1D24D1088500E50E1C /* OpenCVSampleForMacOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1831FF0F24D1088500E50E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1831FEFC24D1087F00E50E1C /* OpenCVSampleForMacOS */;
+			targetProxy = 1831FF0E24D1088500E50E1C /* PBXContainerItemProxy */;
+		};
+		1831FF1A24D1088500E50E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1831FEFC24D1087F00E50E1C /* OpenCVSampleForMacOS */;
+			targetProxy = 1831FF1924D1088500E50E1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1831FF1F24D1088500E50E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1831FF2024D1088500E50E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1831FF2224D1088500E50E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OpenCVSampleForMacOS/OpenCVSampleForMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VJJ58UR69U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = OpenCVSampleForMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caidan.OpenCVSampleForMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVSampleForMacOS/OpenCVSampleForMacOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1831FF2324D1088500E50E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OpenCVSampleForMacOS/OpenCVSampleForMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VJJ58UR69U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = OpenCVSampleForMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caidan.OpenCVSampleForMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVSampleForMacOS/OpenCVSampleForMacOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1831FF2524D1088500E50E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VJJ58UR69U;
+				INFOPLIST_FILE = OpenCVSampleForMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.caidan.OpenCVSampleForMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSampleForMacOS.app/Contents/MacOS/OpenCVSampleForMacOS";
+			};
+			name = Debug;
+		};
+		1831FF2624D1088500E50E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VJJ58UR69U;
+				INFOPLIST_FILE = OpenCVSampleForMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.caidan.OpenCVSampleForMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSampleForMacOS.app/Contents/MacOS/OpenCVSampleForMacOS";
+			};
+			name = Release;
+		};
+		1831FF2824D1088500E50E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VJJ58UR69U;
+				INFOPLIST_FILE = OpenCVSampleForMacOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caidan.OpenCVSampleForMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = OpenCVSampleForMacOS;
+			};
+			name = Debug;
+		};
+		1831FF2924D1088500E50E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VJJ58UR69U;
+				INFOPLIST_FILE = OpenCVSampleForMacOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caidan.OpenCVSampleForMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = OpenCVSampleForMacOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1831FEF824D1087F00E50E1C /* Build configuration list for PBXProject "OpenCVSampleForMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1831FF1F24D1088500E50E1C /* Debug */,
+				1831FF2024D1088500E50E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1831FF2124D1088500E50E1C /* Build configuration list for PBXNativeTarget "OpenCVSampleForMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1831FF2224D1088500E50E1C /* Debug */,
+				1831FF2324D1088500E50E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1831FF2424D1088500E50E1C /* Build configuration list for PBXNativeTarget "OpenCVSampleForMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1831FF2524D1088500E50E1C /* Debug */,
+				1831FF2624D1088500E50E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1831FF2724D1088500E50E1C /* Build configuration list for PBXNativeTarget "OpenCVSampleForMacOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1831FF2824D1088500E50E1C /* Debug */,
+				1831FF2924D1088500E50E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1831FEF524D1087F00E50E1C /* Project object */;
+}
